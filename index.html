@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --icon-size: 2rem;
+      --profile-pic: 9rem;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .icon {
+      height: var(--icon-size);
+    }
+
+    .social-media-handles {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.2rem;
+      font-family: monospace;
+    }
+
+    .social-media-handles>div {
+      padding: 0.5rem;
+      margin: auto;
+      /* background-color: burlywood; */
+    }
+
+    .social-media-handles>div>div {
+      background-color: rgb(238, 238, 238);
+      border-radius: 0.5rem;
+      box-shadow: .1rem .2rem grey;
+      padding: 0.5rem;
+      /* margin-top: 0.5rem;
+      margin-bottom: 0.5rem; */
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .social-media-handles>div>div>div {
+      margin: 0.5rem;
+      /* margin-right: 0.5rem; */
+      /* padding: 0.5rem; */
+    }
+
+    .heading {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.7rem;
+      font-family: monospace;
+    }
+
+    #profile {
+      margin: 2rem;
+      /* background-color: grey; */
+      display: flex;
+      /* margin: 2rem; */
+    }
+
+    #profile-pic {
+      height: var(--profile-pic);
+      /* width: 9rem; */
+      /* margin: 5rem; */
+      /* background-color: greenyellow; */
+    }
+
+    #profile-details {
+      width: calc(100% - var(--profile-pic));
+      /* text-align: center; */
+      /* background-color: red; */
+      margin-left: 1rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    @media screen and (orientation:portrait) {
+
+      #profile {
+        /* background-color: greenyellow; */
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #profile-details {
+        /* background-color: indianred; */
+        /* display: flex; */
+        margin-left: 0rem;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div id="profile">
+      <img src="Capture.PNG" alt="" id="profile-pic" style="border-radius: 1rem;">
+      <div id="profile-details">
+        <div style="font-family: cursive; font-size: 2rem; ">
+          Atharva Upadhye</div>
+      </div>
+    </div>
+    <div class="heading">Connect with me on</div>
+    <div class="social-media-handles">
+      <!--
+      <div>
+        <div onclick="window.open('https:\/\/www.linkedin.com/in/')">
+          <img src="linkedin.svg" alt=" linkedin icon" class="icon">
+          <div></div>
+        </div>
+      </div>
+      -->
+      <div>
+        <div onclick="window.open('https:\/\/github.com/atharva-upadhye-01')">
+          <img src="github.svg" alt="github icon" class="icon">
+          <div>atharva-upadhye-01</div>
+        </div>
+      </div>
+      <div>
+        <div onclick="window.open('https:\/\/www.instagram.com/atharva_upadhye_01')">
+          <img src="instagram-sketched.svg" alt="instagram icon" class="icon">
+          <div>atharva_upadhye_01</div>
+        </div>
+      </div>
+
+
+      <div>
+        <div onclick="window.open('https:\/\/www.facebook.com/atharva.upadhye.391')">
+          <img src="facebook.svg" alt="facebook icon" class="icon">
+          <div>atharva.upadhye.391</div>
+        </div>
+      </div>
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer style="position: relative;">
+      <div>Icons made by
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </div>
+    </footer>
+</body>
+
+</html>
